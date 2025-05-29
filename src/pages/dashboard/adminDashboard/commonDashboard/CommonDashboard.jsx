@@ -1,7 +1,5 @@
 import Donation from "../../../../components/dashboard/charts/donation/Donation";
-import PerFormance from "../../../../components/dashboard/charts/performance/PerFormance";
 
-import Visitors from "../../../../components/dashboard/charts/visitors/Visitors";
 import { useGetChartQuery } from "../../../../redux/dashboardFeatures/getDashboardChartApi";
 
 const CommonDashboard = () => {
