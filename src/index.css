@@ -7,9 +7,6 @@
 @tailwind utilities;
 
 
-
-body {}
-
 span.ant-menu-title-content {
   color: #403730;
   font-weight: 600;
@@ -601,9 +598,7 @@ span.ant-menu-title-content {
     margin-bottom: 10px !important;
   }
 
-  .navBtn2 {
-    /* background-color: rebeccapurple !important ; */
-  }
+  
 }
 
 
@@ -636,16 +631,12 @@ span.ant-menu-title-content {
   background-color: white !important;
 }
 
-/* .input#name{
-  color: black;
-  background: red;
-} */
+
 
 input#name {
   color: black !important;
 }
 
-;
 
 input#email {
   color: black !important;

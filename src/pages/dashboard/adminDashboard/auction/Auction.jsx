@@ -1,6 +1,6 @@
 import { EyeOutlined } from "@ant-design/icons";
 import { Form, Input, InputNumber, Modal, Pagination, Select, Space, Table, Upload } from "antd";
-import { EyeIcon, UploadCloud } from "lucide-react";
+import { UploadCloud } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -12,7 +12,6 @@ import {
   closeActionModalOpenOne,
   closeActionModalOpenThree,
   closeActionModalOpenTwo,
-  closeTeamModalOpenFour,
 } from "../../../../features/modal/modalSlice";
 
 import CustomLoading from "../../shared/CustomLoading";
@@ -94,7 +93,7 @@ const Auction = () => {
         address: updateModalData.address,
         contact_number: updateModalData.contact_number,
         donate_share: updateModalData.donate_share,
-        image: [autionImage],
+        
         image: [autionImage, ProfileImage], // ✅ use it after defining
       });
 
