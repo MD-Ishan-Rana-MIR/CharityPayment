@@ -1,0 +1,1095 @@
+/* google fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {}
+
+span.ant-menu-title-content {
+  color: #403730;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.custom-menu .ant-menu-item:hover {
+  background-color: transparent !important;
+}
+
+.custom-menu .ant-menu-item {
+  margin-bottom: -15px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #403730 !important;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: 90px !important;
+  display: block;
+}
+
+/* .custom-select {
+    border: 0px solid red !important;
+    outline: none !important;
+  } */
+
+.custom-select:hover,
+.custom-select:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  /* Remove any additional focus styles */
+}
+
+.ant-select-selector {
+  border: 1px solid gray !important;
+  outline: 1px solid gray !important;
+}
+
+.ant-select-selector:hover,
+.ant-select-selector:focus {
+  border: 1px solid gray !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.ant-btn:hover {
+  background-color: #363432 !important;
+  color: #ffffff !important;
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .ant-btn {
+    margin-left: 40%;
+    /* Reduce margin on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .ant-btn {
+    background-color: red;
+    margin-left: 40%;
+    /* Further reduce margin on mobile */
+  }
+}
+
+.ant-progress-bg {
+  background-color: red;
+}
+
+/* Custom scrollbar styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  /* Adjust scrollbar width */
+  background: #1b2324;
+}
+
+/* Scrollbar Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #1f2937;
+  /* Track color */
+  border-left: 20px solid transparent;
+  /* Creates space on the left */
+}
+
+/* Scrollbar Thumb */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  /* Thumb color */
+  border-radius: 4px;
+}
+
+/* banner btn */
+
+.bannerBtn {
+  display: block;
+  margin-left: 0;
+  /* color: "white"; */
+  padding: "30px 24px";
+  font-weight: 700;
+  background-color: #403730;
+  color: white !important;
+}
+
+/* podcastBtn */
+
+.podcastBtn {
+  color: "white";
+  padding: "30px 24px";
+  font-weight: 700;
+  background-color: #403730;
+  color: white !important;
+  border: none;
+}
+
+/* Common Styles for Both Buttons */
+.donatedBtn1,
+.donatedBtn2 {
+  border: none;
+  font-size: 1rem;
+  /* Responsive font size */
+  padding: 23px 20px;
+  /* Responsive padding */
+  /* Slightly rounded corners for better design */
+  transition: all 0.3s ease-in-out;
+  /* Smooth hover effect */
+  text-align: center;
+  /* Default display */
+}
+
+/* Style for donatedBtn1 */
+.donatedBtn1 {
+  background-color: #403730;
+  color: white !important;
+}
+
+/* Hover Effect for donatedBtn1 */
+
+/* Style for donatedBtn2 */
+.donatedBtn2 {
+  background-color: transparent !important;
+  color: #403730 !important;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+  .donatedBtn1,
+  .donatedBtn2 {
+    width: 100%;
+    /* Full width on smaller screens */
+  }
+}
+
+/* applayBtn */
+
+.applayBtn {
+  width: 120px;
+  height: 40px;
+  color: "white";
+  font-weight: 700;
+  background-color: white;
+  color: #403730 !important;
+  border: none;
+  display: block;
+  margin-left: 0;
+}
+
+.applayBtn:hover {
+  background-color: #6a55441a;
+  color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+  .applayBtn {
+    /* Full width on smaller screens */
+    display: block !important;
+    margin-left: 43%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .applayBtn {
+    /* Full width on smaller screens */
+    display: block !important;
+    margin-left: 32%;
+  }
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-in-out;
+}
+
+.ant-dropdown-trigger {
+  display: block;
+  margin-left: 0px;
+  background-color: #403730;
+  border: none;
+  border-radius: 0px;
+  outline: none !important;
+  height: 40px;
+}
+
+.ant-dropdown-trigger:hover {
+  background-color: #403730 !important;
+}
+
+.custom-dropdown-item {
+  display: block;
+}
+
+.ant-dropdown-menu {
+  width: 160px;
+  display: block;
+  margin-right: 110px !important;
+  color: #1e1e1e;
+  font-size: larger;
+}
+
+.custom-dropdown-item {
+  display: block;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.custom-dropdown-item:hover {
+  transform: scale(1.05);
+  /* Scale effect on hover */
+  background-color: #f0f0f0;
+}
+
+/* home page slider button */
+.sliderBtn1 {
+  border: none !important;
+  background-color: transparent !important;
+  font-weight: 600;
+  box-shadow: none;
+  width: 92px;
+  min-height: 32px;
+  padding: 0 24px;
+  box-shadow: none;
+
+  width: 155px;
+
+  height: 45px;
+}
+
+.sliderBtn1:hover {
+  background-color: transparent !important;
+  color: black !important;
+  outline: none;
+}
+
+.sliderBtn2 {
+  border: none !important;
+  background-color: #403730 !important;
+  color: white !important;
+  font-weight: 600;
+  box-shadow: none;
+  width: 155px;
+  min-height: 32px;
+  padding: 10px 34px;
+  height: 45px;
+}
+
+.sliderBtn2:hover {
+  background-color: #2c241f !important;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sliderBtn1 {
+    /* Full width on smaller screens */
+    display: block !important;
+    margin-left: 33%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sliderBtn1 {
+    /* Full width on smaller screens */
+    display: block !important;
+    margin-left: 100%;
+    background-color: red;
+  }
+
+  .sliderBtn2 {
+    /* Full width on smaller screens */
+    display: block !important;
+    margin-left: 3%;
+    background-color: red;
+    margin-top: 3px;
+  }
+}
+
+/* home page css  */
+
+.homeBtn {
+  background-color: #403730 !important;
+  color: white !important;
+  font-weight: bold !important;
+  height: 46px !important;
+  outline: none !important;
+  border: none !important;
+  width: 250px !important;
+}
+
+.homeBtn:hover {
+  background-color: #2c241f !important;
+  color: white !important;
+  outline: none !important;
+  border: none !important;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .homeBtn {
+    /* Full width on smaller screens */
+    display: block !important;
+    width: full !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homeBtn {
+    /* Full width on smaller screens */
+    display: block !important;
+    margin: 20px !important;
+  }
+}
+
+.supportBtn {
+  width: 158px !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+
+.volunteerBtn {
+  width: 209px !important;
+  height: 44px !important;
+  color: #403730 !important;
+  font-weight: bold !important;
+  line-height: 20px !important;
+  background-color: #fcfcff !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.volunteerBtn:hover {
+  color: #403730 !important;
+  background-color: #d9d9e6 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .supportBtn {
+    display: block !important;
+    margin-left: 0px;
+  }
+
+  .volunteerBtn {
+    display: block !important;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .supportBtn {
+    display: block !important;
+    margin-right: 10px;
+    width: 143px !important;
+  }
+
+  .volunteerBtn {
+    display: block !important;
+    border: 2px solid black !important;
+    margin-left: 20px !important;
+  }
+}
+
+.missionModalBtn1 {
+  border: none !important;
+  color: #403730 !important;
+  font-weight: 700;
+  font-size: 14px;
+  width: 155px !important;
+  height: 44px !important;
+  box-shadow: none !important;
+}
+
+.missionModalBtn1:hover {
+  border: none !important;
+  background-color: transparent !important;
+  color: #403730 !important;
+}
+
+.missionModalBtn2 {
+  border: none !important;
+  background-color: #403730 !important;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff !important;
+  width: 185px !important;
+  height: 44px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .missionModalBtn1 {
+    display: block !important;
+    margin: auto !important;
+    margin-right: -130px !important;
+  }
+
+  .serviceBtn3 {
+    display: block !important;
+    margin: auto !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .missionModalBtn1 {
+    background-color: transparent !important;
+    display: block !important;
+    margin-right: 0% !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+/* sevice page css  */
+
+.seviceBtn {
+  background-color: #403730 !important;
+  color: white !important;
+  font-weight: bold !important;
+  height: 46px !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.serviceBtn2 {
+  background-color: #fcfcff !important;
+  color: #403730 !important;
+  font-weight: bold !important;
+  height: 46px !important;
+  width: 155px;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.serviceBtn2:hover {
+  background-color: white !important;
+  color: #403730 !important;
+}
+
+.serviceBtn3 {
+  background-color: #403730 !important;
+  height: 46px !important;
+  width: 155px;
+  outline: none !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .seviceBtn {
+    /* Full width on smaller screens */
+    display: block !important;
+    margin: auto !important;
+    /* margin-left: 30%; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .serviceBtn2 {
+    display: block !important;
+    margin: auto !important;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .serviceBtn3 {
+    display: block !important;
+    margin: auto !important;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .serviceBtn2 {
+    display: block !important;
+    margin: auto !important;
+    margin-left: 10%;
+    border: 2xp solid red;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .serviceBtn2 {
+    background-color: transparent !important;
+    display: block !important;
+    margin-right: -10% !important;
+  }
+}
+
+/* service page css  */
+
+.luxeryBtn {
+  background-color: #403730 !important;
+  color: white !important;
+  font-weight: 500 !important;
+  height: 46px !important;
+  outline: none !important;
+  border: none !important;
+  font-size: 14px !important;
+}
+
+/* navbar page css  */
+
+.navBtn1 {
+  border: none !important;
+  color: #403730 !important;
+  font-weight: 700;
+  font-size: 14px;
+  width: 155px !important;
+  height: 44px !important;
+  box-shadow: none !important;
+}
+
+.navBtn1:hover {
+  border: none !important;
+  background-color: transparent !important;
+  color: #403730 !important;
+}
+
+.navBtn2 {
+  border: none !important;
+  background-color: #403730 !important;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff !important;
+  width: 185px !important;
+  height: 44px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .navBtn1 {
+    display: block !important;
+    margin: auto !important;
+    /* margin-right: -230px !important; */
+  }
+
+  .navBtn2 {
+    display: block !important;
+    margin: auto !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navBtn1 {
+    background-color: transparent !important;
+    display: block !important;
+    margin-right: 0% !important;
+    margin-bottom: 10px !important;
+  }
+
+  .navBtn2 {
+    /* background-color: rebeccapurple !important ; */
+  }
+}
+
+
+
+
+
+/* footer css  */
+.ant-menu-item-selected {
+  background-color: transparent !important;
+}
+
+
+/* calender css  */
+
+#element {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.ant-dropdown-trigger.cursor-pointer {
+  background-color: white !important;
+}
+
+/* .input#name{
+  color: black;
+  background: red;
+} */
+
+input#name {
+  color: black !important;
+}
+
+;
+
+input#email {
+  color: black !important;
+}
+
+input#contact_number {
+  color: black !important;
+}
+
+input.ant-input.css-dev-only-do-not-override-1d4w9r2.ant-input-outlined {
+  color: black !important;
+}
+
+input#email {
+  color: black !important;
+}
+
+input#item_name {
+  color: black !important;
+}
+
+span.ant-select-selection-item {
+  color: black !important;
+}
+
+input#location {
+  color: black !important;
+}
+
+input#number {
+  color: black !important;
+}
+
+input#city {
+  color: black !important;
+  border: 1px solid black;
+}
+
+input#address {
+  color: black !important;
+}
+
+input#title {
+  color: black !important;
+}
+
+input#card_number {
+  color: black !important;
+}
+
+.ant-select:hover .ant-select-selector {
+  border: 1px solid black;
+}
+
+input#phone_number {
+  color: black !important;
+}
+
+input#email {
+  color: black !important;
+}
+
+input#name {
+  color: black !important;
+}
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: white; /* Dark track */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4ade80; /* Green thumb */
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #22c55e; /* Brighter on hover */
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4ade80 ;
+}
+
+
+/* ===================== dashboar component style ================= */
+
+li.ant-menu-item-selected {
+
+  background-color: #262724 !important;
+  border-right: 4px solid #908B87 !important;
+  border-radius: 0px !important;
+}
+
+span.ant-menu-title-content {
+
+  /* background-color: #908B87 !important; */
+
+  color: white !important;
+}
+
+
+
+
+/* ========= search input field style start ========= */
+input.ant-input.css-dev-only-do-not-override-1d4w9r2.ant-input-outlined:hover {
+  background-color: transparent !important;
+  border-color: gray !important;
+  /* Keep border color consistent */
+  color: black;
+}
+
+
+
+
+/* Ensure no hover effect on the search button */
+button.ant-btn.css-dev-only-do-not-override-1d4w9r2.ant-btn-default.ant-btn-color-default.ant-btn-variant-outlined.ant-btn-icon-only.ant-input-search-button:hover {
+  background-color: transparent !important;
+  /* Keep the background transparent */
+  border-color: gray !important;
+  /* Keep border color consistent */
+}
+
+/* Customize the input field */
+input.ant-input.css-dev-only-do-not-override-1d4w9r2.ant-input-outlined {
+  background-color: transparent !important;
+  /* Transparent background */
+  border: 1px solid gray !important;
+  /* Gray border */
+  color: white !important;
+  /* Text color white */
+}
+
+input.ant-input::placeholder {
+  color: rgba(255, 255, 255, 0.24) !important;
+  /* White placeholder text */
+}
+
+/* Customize the search button */
+button.ant-btn.css-dev-only-do-not-override-1d4w9r2.ant-btn-default.ant-btn-color-default.ant-btn-variant-outlined.ant-btn-icon-only.ant-input-search-button {
+  background-color: transparent !important;
+  /* Transparent background */
+  border: 1px solid gray !important;
+  /* Gray border */
+  color: gray !important;
+  /* Icon color */
+}
+
+/* Remove any background and border from the icon */
+button.ant-btn .anticon {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Ensuring the hover effect is removed from the search icon */
+button.ant-btn.ant-btn-default.ant-btn-color-default.ant-btn-variant-outlined.ant-btn-icon-only.ant-input-search-button:hover .anticon {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+
+
+/* ========= search input field style end ========= */
+
+
+
+/* ========== table compoonent style start =========== */
+.custom-ant-table .ant-table {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Remove background from table header */
+.custom-ant-table .ant-table-thead>tr>th {
+  background-color: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.027) !important;
+  box-shadow: none !important;
+  color: rgba(255, 255, 255, 0.781) !important;
+  font-weight: 700 !important;
+}
+
+/* Remove background from table rows */
+.custom-ant-table .ant-table-tbody>tr>td {
+  background-color: transparent !important;
+  color: #A6ABAC !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.027) !important;
+}
+
+/* Optional: remove row hover effect */
+.custom-ant-table .ant-table-tbody>tr:hover>td {
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .custom-ant-table .ant-table-thead>tr>th {
+    font-size: 12px !important;
+    font-weight: 200 !important;
+  }
+}
+
+/* ========== table compoonent style end =========== */
+
+
+/* ============ contributors filter button style start ======== */
+.ant-select-selector {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.24) !important;
+  /* Keep visible border */
+  color: #ffffff !important;
+  transition: none !important;
+  /* Disable animation */
+}
+
+.ant-select:hover .ant-select-selector {
+  border-color: #ffffff !important;
+  /* Keep border on hover */
+  box-shadow: none !important;
+  /* Remove hover animation effect */
+}
+
+.ant-select-selection-placeholder {
+  color: rgba(255, 255, 255, 0.24) !important;
+}
+
+/* ============ contributors filter button style end ======== */
+
+
+
+/* ========== modal custom design start ================ */
+/* style.css or a global style file */
+.custom-auction-modal .ant-modal-content {
+  background-color: #c6cecf;
+}
+
+
+.custom-ai-modal .ant-modal-content {
+  background-color: #263234;
+}
+
+
+
+
+.custom-view-modal .ant-modal-close {
+  background-color: #705f5f;
+  /* Change to your desired background */
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.custom-view-modal .ant-modal-close-x {
+  color: white;
+  /* Optional: change icon color */
+  font-size: 16px;
+  /* Optional: resize the icon */
+}
+
+
+/* ========== modal custom design end ================ */
+
+
+/* ========= modal input field custom color add start ========= */
+.custom-input-borderColor:hover,
+.custom-input-borderColor:focus,
+.custom-input-borderColor:focus-within,
+.custom-input-borderColor:active {
+  border-color: #d9d9d9 !important;
+  box-shadow: none !important;
+}
+
+/* ========= modal input field custom color add end ========= */
+
+
+/* not found ant table style */
+.ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder {
+  background: #1B2324;
+
+}
+
+:where(.css-dev-only-do-not-override-1d4w9r2).ant-empty .ant-empty-description {
+  color: #fff
+}
+
+
+
+/* button hover effect remove============== */
+.no-hover.ant-btn-primary:hover,
+.no-hover.ant-btn-primary:focus {
+  background-color: #1677ff !important;
+  border-color: #1677ff !important;
+  box-shadow: none !important;
+}
+
+
+
+
+
+/* 
+1. button hover effect remove
+
+*/
+
+
+/*================ ant modal custom style start ============= */
+/* .ant-modal-content {
+  padding: 0px !important;
+
+}
+
+.ant-modal-close-icon {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.ant-modal-body {
+  background-color: #1B2324!important;
+  margin-top: -8px !important;
+}
+
+.ant-modal-body {
+  border-radius: 0 0 6px 6px !important;
+}
+
+.ant-form-item-required {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  content: "" !important;
+}
+
+.ant-tag-close-icon {
+  color: black !important;
+  padding-left: 20px;
+  font-size: 18px !important;
+}
+
+.ant-card-body {
+  padding: 0px;
+  border-radius: 10px !important;
+} */
+/*================ ant modal custom style end ============= */
+
+
+/* input field place holder custom color */
+/* Target the real input element inside the Ant Design wrapper */
+input#forget_password_email {
+  color: #ffff !important;
+  background: transparent;
+}
+
+input#dashboard_otp {
+  color: #ffff !important;
+  background: transparent;
+}
+
+input#dashboard_new_password {
+  color: #ffff !important;
+  background: transparent;
+}
+
+input#dashboard_new_password {
+  color: #ffff !important;
+  background: transparent;
+}
+
+input#dashboard_password_confirmation {
+  color: #ffff !important;
+  background: transparent;
+}
+
+input#dashboard_team_create {
+  color: #ffff !important;
+  background: transparent;
+}
+
+input#dashboard_podcast {
+  color: #ffff !important;
+  background: transparent;
+}
+
+input#dashboard_setting_name {
+  color: #ffff !important;
+  background: transparent;
+}
+
+input#dashboard_auction {
+  color: #ffff !important;
+  background: transparent;
+}
+
+
+
+
+input#email {
+  color: #fff !important;
+}
+
+input#name {
+  color: #fff !important;
+}
+
+
+.rhap_time {
+  color: #fff !important;
+}
+
+
+
+/* image upload name style */
+span.ant-upload-list-item-name {
+  color: #ffff;
+}
+
+a.ant-upload-list-item-name {
+  color: #ffff;
+}
+
+svg {
+  color: #ffff;
+}
+
+span.mt-2 {
+  color: #ffff;
+}
+
+.custom-textarea::placeholder {
+  color: #99999980;
+  /* your custom placeholder color */
+}
+
+
+
+/* radio button style */
+span.ant-radio-label {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 600;
+}
